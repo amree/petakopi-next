@@ -1,6 +1,6 @@
 export default async function Home() {
-  let data = await fetch("https://petakopi.my/api/v1/coffee_shops");
-  let shops = await data.json();
+  const data = await fetch("https://petakopi.my/api/v1/coffee_shops");
+  const shops = await data.json();
 
   return (
     <ul>
